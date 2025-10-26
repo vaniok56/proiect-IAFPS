@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Syllabification and Transliteration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+        <h1>Text Syllabification & Transliteration</h1>
+        
+        <div class="button-container">
+            <button id="syllabifyBtn" title="Separate text into syllables">
+                📝 Syllabify
+            </button>
+            <button id="transliterateBtn" title="Convert characters using replacement rules" disabled>
+                🔄 Transliterate
+            </button>
+            <button id="undoBtn" title="Undo last operation (Ctrl+Z)">
+                ↩️ Undo (Ctrl+Z)
+            </button>
+        </div>
+
+        <div id="statusContainer"></div>
+
+        <div class="textarea-container">
+            <textarea id="textArea" placeholder="Loading lyrics..."></textarea>
+            <div class="char-count" id="charCount">0 characters</div>
+        </div>
+    </div>
+
+    <!-- Load the syllable separator module -->
+    <script src="syllable-separator.js"></script>
+    
+    <!-- Load the replacements module -->
+    <script src="replacements.js"></script>
+    
+    <!-- Load the main application logic -->
+    <script src="script_example.js"></script>
+</body>
+</html>
