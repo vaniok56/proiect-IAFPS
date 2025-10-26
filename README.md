@@ -1,5 +1,7 @@
 # Text Syllabification and Transliteration Web Application
 
+![App screenshot](imgs/screenshot.png "Screenshot of the app")
+
 A single-page web application that performs syllabification and transliteration on text content.
 
 ## Features
